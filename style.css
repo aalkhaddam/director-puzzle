@@ -1,0 +1,73 @@
+body{
+    background-color: #1E3765;
+    font-family: Arial, sans-serif;
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding-top: 100px;
+    gap:20px;
+}
+
+.outerTitleBox{
+    display:grid;
+    grid-template-columns: auto;
+    padding: auto;
+
+
+}
+
+.titleBox{
+    display: flex;
+    height:auto;
+    width:auto;
+    background-color: white;
+    border-color: black;
+    border-radius: 10px;
+    margin: auto;
+    justify-content: center;
+    padding: 5px;
+}
+
+.pageTitle{
+    color: black;
+    font-size: xx-large;
+    margin:0;
+}
+
+.clueBox{
+    display: flex;
+    width: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.clueText{
+    color: black;
+    font-size: large;
+}
+
+.nextButtonBox{
+    display:grid;
+    justify-content: center;
+}
+.contentBox{
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.gameButton{
+    background-color: #D0D1C9;
+}
+
+.contentBox{
+    padding: 20px;
+}
+
+.instructionBullet{
+    list-style-type: none;
+    margin-bottom: 15 px;
+    font-size: x-large;
+}
