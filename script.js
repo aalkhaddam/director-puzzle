@@ -29,14 +29,14 @@ let puzzleObject = {
 let skipButtonHTML = `<button class="skipButton">SKIP</button>`;
 
 let finalWord = [71, 73, 78, 84, 79, 67, 76, 69, 65, 82]
-let finalWordLength = 10; // Trace login - anagram: relocating
+let finalWordLength = 10; 
 let finalMessage = [
     `You made it to the end!`, 
     `The anagram might have something to do with location...`,
     -1242682162,
     -1190933822
-]; // For last page, 
-// first is correct word, second is anagram of correct word
+]; 
+
 let reachedFinal = false;
 let correctAna = false;
 
@@ -70,16 +70,6 @@ skipButton.addEventListener('click', () => {
     callPuzzle();
 });
 
-//skip function - wont get a letter
-//Maybe a previous puzzle button?
-//maybe figuring out a final word to demonstrate puzzle completion - letter on each success
-//random letter order - maybe a hard anagram with different words 
-// - should each group have a different order? Might be abusable if 
-// someone refreshes the page to get a different letter every time
-
-
-// This function will call each puzzle 
-// - now consdiering a Start Page
 function callPuzzle(){
     if((puzzleCounter-1) == finalWordLength){ // final word logic here
         document.querySelector('.pageTitle').innerHTML = finalMessage[0];
@@ -132,7 +122,7 @@ function submitPuzzle(){
     callPuzzle();
 }
 
-function checkAnswer(input){ // may need to add some stuff related to final word
+function checkAnswer(input){ 
     let hash = 0;
     let textMod = input.toLowerCase();
     for (let i = 0, len = input.length; i < len; i++) {
